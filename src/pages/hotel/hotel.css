@@ -1,0 +1,470 @@
+.hotelContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.hotelHeading {
+    display: flex;
+    justify-content: space-between;
+    margin-left: 16px;
+}
+
+.hotelWrapper {
+    width: 100%;
+    max-width: 1140px;
+    display: flex;
+} 
+
+
+.hotelTitle {
+    color: #333;
+    display: flex;
+    align-items: center;
+}
+
+.hotelTitle > span {
+    font-size: 12px;
+    background-color: #7f7f7f;
+    color: #fff;
+    height: 22px;
+
+    padding: 4px;
+    border-radius: 2px;
+}
+
+.hotelTitle > h1 {
+    margin-left: 16px;
+}
+
+.hotelLocation {
+    display: flex;
+    align-items: center;
+
+    margin-top: 16px;
+}
+
+.hotelLocation > .icon {
+    color: #0071c2;
+    width: 24px;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+.hotelAddress {
+    font-size: 14px;
+    margin: 0 12px;
+    font-weight: 400;
+}
+
+.showMap {
+    margin: 0 12px;
+    font-size: 14px;
+    font-weight: 500;
+    color: #0071c2;
+    cursor: pointer;
+}
+
+.hotelShare {
+    display: flex;
+    align-items: center;
+}
+
+.hotelShare > .heart,
+.hotelShare > .share {
+    font-size: 24px;
+    margin: 0 12px;
+}
+
+.hotelShare > .heart {
+    color: rgba(0, 0, 0, 0.2);
+}
+
+.hotelShare > .heart:hover {
+    color: red;
+    cursor: pointer;
+}
+
+.hotelShare > .share:hover {
+    cursor: pointer;
+    color: #0071c2;
+}
+
+.reserveBtn {
+    margin-left: 12px;
+    padding: 10px 24px;
+    border: none;
+    border-radius: 4px;
+
+    background-color: #0071c2;
+    color: #fff;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+.reserveBtn:hover {
+    background-color: rgb(0, 72, 122);
+}
+
+
+
+.hotelSearch {
+    flex: 1;
+    max-width: 270px;
+    background-color: #febb02;
+    height: max-content;
+
+    padding: 14px;
+    border-radius: 4px;
+
+    margin-bottom: 40px;
+    position: relative;
+}
+
+.htTitle {
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.htItem {
+    margin-bottom: 8px;
+}
+
+.htInput {
+    display: flex;
+    align-items: center;
+    font-weight: 300;
+    background-color: #fff;
+
+    padding: 12px 8px;
+
+    height: 36px;
+
+    border-radius: 4px;
+}
+.htItem .icon {
+    width: 24px;
+    height: 24px;
+    color: #000;
+
+    margin-right: 8px;
+}
+
+.htInput input {
+    flex: auto;
+    height: 36px;
+    font-size: 14px;
+    padding: 8px;
+    border: none;
+    outline: none;
+}
+.hotelSearch label { 
+    font-size: 12px;
+    font-weight: 400;
+    margin-top: 12px;
+    color: #333;
+}
+
+.htItem input {
+    width: 100%;
+}
+
+.htDate {
+    position: relative;
+    background-color: #fff;
+    padding: 8px;
+
+    height: 36px;
+    border-radius: 4px;
+
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+.htDate span {
+    font-size: 14px;
+    font-weight: 400;
+    margin-left: 8px;
+}
+.htDate .htAngle {
+    margin-left: 100px;
+}
+
+.calendarStart {
+    position: absolute;
+    top: 120px;
+    left: 100%;
+    z-index: 2;
+}
+
+.htOptions {
+    z-index: 2;
+    position: absolute;
+    top: calc(100% + 12px);
+    left: 0;
+
+    background-color: #fff;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 240px;
+
+    color: #000;
+    border-radius: 4px;
+
+    padding: 24px;
+    box-shadow: 0 2px 16px rgb(0 0 0 / 15%)
+}
+.htOptionItems {
+    background-color: #fff;
+    height: 36px;
+    display: flex;
+    align-items: center;
+
+    border-radius: 4px;
+    justify-content: space-between;
+
+    margin-top: 25px;
+    position: relative;
+}
+
+.htControl {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    cursor: pointer;
+}
+
+.htOptionItems span {
+    font-size: 14px;
+    font-weight: 400;
+    margin-left: 8px;
+}
+
+.htAngleList {
+    color: #000;    
+    margin-left: 21px;
+}
+
+.htOptionItem {
+
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    margin-bottom: 24px;
+}
+
+.htOptionItem span {
+    margin: 0 16px;
+}
+
+
+
+.htOptionItem button {
+    width: 40px;
+    height: 40px;
+    font-size: 16px;
+
+    background-color: #fff;
+    border: 2px solid #80b8e0;
+    color: #80b8e0;
+    border-radius: 2px;
+    
+    cursor: pointer;
+}
+
+.htOptionItem button:active {
+    background-color: #f0f7fb;
+}
+
+.htOptionItem button:disabled {
+    cursor: default;
+    color: lightgray;
+    border: 2px solid lightgray;
+    background-color: #fff;
+}
+
+.htWork {
+    display: flex;
+    align-items: center;    
+    margin: 12px 0;
+}
+
+.htWork input {
+    width: fit-content;
+    cursor: pointer;
+}
+
+.htWork p {
+    font-size: 13px;
+    color: #333;
+    font-weight: 400;
+    margin: 0 8px;
+}
+
+.htWork .quesIcon {
+    margin-left: 75px;
+}
+
+.htSearchBtn {
+    width: 100%;
+    height: 48px;
+
+    border: none;
+    background-color: #0071c2;
+    color: #fff;
+
+    font-size: 16px;
+    border-radius: 4px;
+    margin-bottom: 12px;
+
+    cursor: pointer;
+}
+
+.htSearchBtn:hover {
+    background-color: #00487a;
+}
+
+.hotelContent {
+    flex: 3;
+    display: flex;
+    flex-direction: column;
+    height: max-content;
+}
+
+.hotelImg {
+    margin-top: 10px;
+    padding-left: 16px;
+    overflow: hidden;
+}
+
+.hotelImgTop {
+    height: 400px;
+
+    display: grid;
+    gap: 10px;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    overflow: hidden;
+}
+
+.hotelImgBot {
+    margin-top: 10px;
+    display: grid;
+    gap: 10px;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    overflow: hidden;
+}
+
+.img1 {
+    grid-column: 1 2;   
+}
+
+.img2 {
+    grid-column: 2 / span 2;
+    grid-row: 1 / span 2;
+
+}
+
+.img3 {
+    grid-column: 1 2;
+}
+
+.imgTop {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 2px;
+}
+
+.imgBot {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 2px;
+}
+
+.hotelDesc {
+    width: 100%;
+    max-width: 1140px;
+    margin: 20px 0;
+
+    display: flex;
+}
+
+.htDetails {
+    flex: 3;
+
+    padding-right: 20px;
+}
+
+.htDetails h2 {
+    font-size: 24px;
+    font-weight: 500;
+}
+
+.htDetails p {
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 1.5;
+    margin-top: 20px;
+}
+
+.htDetails span {
+    display: inline-block;
+    margin-top: 20px;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.htHighlights {
+    flex: 1;
+}
+
+.box {
+    width: 100%;
+    height: 240px;
+    padding: 16px;
+
+    background-color: #ebf3ff;
+    border-radius: 4px;
+}
+
+.box h3 {
+    font-weight: 500;
+    font-size: 16px;
+    margin-bottom: 16px;
+}
+
+.box p {
+    font-size: 13px;
+    font-weight: 300;
+}
+
+.box h4 {
+    font-size: 15px;
+    font-weight: 500;
+    margin: 16px 0;
+}
+
+.box button {
+    width: 100%;
+    padding: 10px 16px;
+    margin-top: 40px;
+
+    font-size: 14px;
+
+    border: none;
+    border-radius: 4px;
+    background-color: #0071c2;
+
+    color: #fff;
+    cursor: pointer;
+}
+
+.box button:hover {
+    background-color: #00487a;
+}
