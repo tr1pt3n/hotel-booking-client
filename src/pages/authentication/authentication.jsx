@@ -1,5 +1,4 @@
 import './authentication.css';
-import './script.js'
 const Authentication = () =>
 {
 
@@ -12,8 +11,6 @@ const Authentication = () =>
     rel="stylesheet"
     href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
   />
-  <link rel="stylesheet" href="style.css" />
-  <title>Modern Login Page | AsmrProg</title>
   <div className="container" id="container">
     <div className="form-container sign-up">
       <form>
